@@ -1,10 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My First Website</title>
-  </head>
-  <body>
-    <h1>Hello 👋</h1>
-    <p>This is my first website.</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Layers of the Skin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Layers of the Skin</h1>
+
+  <!-- 1. Skin as a whole -->
+  <section class="card skin">
+    <h2 onclick="toggleContent(this)">Skin (Overall) ▼</h2>
+    <div class="content">
+      <p>The skin is the largest organ of the body. It protects the body, regulates temperature, prevents water loss, and provides sensation.</p>
+      <p><strong>Quiz:</strong> True or False: The skin is the largest organ in the body.</p>
+      <button onclick="checkQuiz(this, false)">False</button>
+      <button onclick="checkQuiz(this, true)">True</button>
+      <p class="quiz-result"></p>
+    </div>
+  </section>
+
+  <!-- 2. Epidermis -->
+<section class="card epidermis">
+  <h2 onclick="toggleContent(this)">Epidermis ▼</h2>
+  <div class="content">
+
+    <!-- Stratum Corneum -->
+    <div class="sub-layer">
+      <h3 onclick="toggleContent(this)">Stratum Corneum ▼</h3>
+      <div class="content">
+        <img src="stratum_corneum.png" alt="Stratum Corneum diagram" class="layer-diagram">
+        <p><strong>Stage in shedding:</strong> Final stage, cells are dead and keratinized.</p>
+        <p><strong>Structures:</strong> Flattened keratinocytes</p>
+        <p><strong>Functions:</strong> Barrier against pathogens, prevents water loss</p>
+        <p><strong>Quiz:</strong> True or False: These cells are no longer alive.</p>
+        <button onclick="checkQuiz(this, false)">False</button>
+        <button onclick="checkQuiz(this, true)">True</button>
+        <p class="quiz-result"></p>
+      </div>
+    </div>
+
+    <!-- Stratum Lucidum -->
+    <div class="sub-layer">
+      <h3 onclick="toggleContent(this)">Stratum Lucidum ▼</h3>
+      <div class="content">
+        <img src="stratum_lucidum.png" alt="Stratum Lucidum diagram" class="layer-diagram">
+        <p><strong>Stage in shedding:</strong> Transition layer, clear cells.</p>
+        <p><strong>Structures:</strong> Transparent keratinocytes</p>
+        <p><strong>Functions:</strong> Extra protection in thick skin (palms/soles)</p>
+        <p><strong>Quiz:</strong> Where is this layer found?</p>
+        <button onclick="checkQuiz(this, true)">Palms and soles</button>
+        <button onclick="checkQuiz(this, false)">Back of hand</button>
+        <p class="quiz-result"></p>
+      </div>
+    </div>
+
+    <!-- Stratum Granulosum -->
+    <div class="sub-layer">
+      <h3 onclick="toggleContent(this)">Stratum Granulosum ▼</h3>
+      <div class="content">
+        <img src="stratum_granulosum.png" alt="Stratum Granulosum diagram" class="layer-diagram">
+        <p><strong>Stage in shedding:</strong> Cells start dying, keratin accumulates.</p>
+        <p><strong>Structures:</strong> Granular keratinocytes</p>
+        <p><strong>Functions:</strong> Waterproofing, forms skin barrier</p>
+        <p><strong>Quiz:</strong> True or False: Cells in this layer are still alive.</p>
+        <button onclick="checkQuiz(this, true)">True</button>
+        <button onclick="checkQuiz(this, false)">False</button>
+        <p class="quiz-result"></p>
+      </div>
+    </div>
+
+    <!-- Stratum Spinosum -->
+    <div class="sub-layer">
+      <h3 onclick="toggleContent(this)">Stratum Spinosum ▼</h3>
+      <div class="content">
+        <img src="stratum_spinosum.png" alt="Stratum Spinosum diagram" class="layer-diagram">
+        <p><strong>Stage in shedding:</strong> Living cells, start producing keratin.</p>
+        <p><strong>Structures:</strong> Desmosomes connecting cells</p>
+        <p><strong>Functions:</strong> Provides strength and flexibility</p>
+        <p><strong>Quiz:</strong> Which feature helps cells stick together?</p>
+        <button onclick="checkQuiz(this, true)">Desmosomes</button>
+        <button onclick="checkQuiz(this, false)">Melanin</button>
+        <p class="quiz-result"></p>
+      </div>
+    </div>
+
+    <!-- Stratum Basale -->
+    <div class="sub-layer">
+      <h3 onclick="toggleContent(this)">Stratum Basale ▼</h3>
+      <div class="content">
+        <img src="stratum_basale.png" alt="Stratum Basale diagram" class="layer-diagram">
+        <p><strong>Stage in shedding:</strong> Deepest layer, cells divide continuously.</p>
+        <p><strong>Structures:</strong> Basal keratinocytes, melanocytes</p>
+        <p><strong>Functions:</strong> Regeneration of epidermis, pigment production</p>
+        <p><strong>Quiz:</strong> True or False: This layer regenerates the skin.</p>
+        <button onclick="checkQuiz(this, true)">True</button>
+        <button onclick="checkQuiz(this, false)">False</button>
+        <p class="quiz-result"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 3. Dermis -->
+  <section class="card dermis">
+    <h2 onclick="toggleContent(this)">Dermis ▼</h2>
+    <div class="content">
+      <h3>Papillary Layer</h3>
+      <p><strong>Structures:</strong> Capillaries, sensory receptors</p>
+      <p><strong>Functions:</strong> Nourishes epidermis, sensation</p>
+
+      <h3>Reticular Layer</h3>
+      <p><strong>Structures:</strong> Collagen fibers, sweat glands, hair follicles</p>
+      <p><strong>Functions:</strong> Strength, elasticity, thermoregulation</p>
+
+      <p><strong>Quiz:</strong> Which dermis layer provides elasticity?</p>
+      <button onclick="checkQuiz(this, true)">Reticular Layer</button>
+      <button onclick="checkQuiz(this, false)">Papillary Layer</button>
+      <p class="quiz-result"></p>
+    </div>
+  </section>
+
+  <!-- 4. Subcutaneous Layer -->
+  <section class="card subcutaneous">
+    <h2 onclick="toggleContent(this)">Subcutaneous Layer ▼</h2>
+    <div class="content">
+      <h3>Structures</h3>
+      <ul>
+        <li>Adipose tissue (fat)</li>
+        <li>Blood vessels</li>
+      </ul>
+
+      <h3>Functions</h3>
+      <ul>
+        <li>Insulation</li>
+        <li>Energy storage</li>
+        <li>Anchors skin to underlying tissues</li>
+      </ul>
+
+      <p><strong>Quiz:</strong> True or False: Subcutaneous layer stores fat.</p>
+      <button onclick="checkQuiz(this, true)">True</button>
+      <button onclick="checkQuiz(this, false)">False</button>
+      <p class="quiz-result"></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
 </html>

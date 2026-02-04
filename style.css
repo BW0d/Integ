@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.card h2 {
+  margin: 0;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Color coding each layer */
+.skin h2 { background-color: #a2d5f2; }
+.epidermis h2 { background-color: #f5b971; }
+.dermis h2 { background-color: #f28c8c; }
+.subcutaneous h2 { background-color: #a8e6cf; }
+
+.content {
+  display: none;
+  margin-top: 15px;
+}
+
+button {
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.quiz-result {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.sub-layer h3 {
+  background-color: #f7d794;
+  color: #333;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sub-layer .content {
+  display: none;
+  padding-left: 15px;
+  margin-top: 5px;
+  background-color: #fff3e0;
+  border-left: 3px solid #f5b971;
+  border-radius: 5px;
+}
+/* Epidermis sub-layers */
+.sub-layer h3 {
+  background-color: #f7d794;
+  color: #333;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sub-layer .content {
+  display: none;
+  padding-left: 15px;
+  margin-top: 5px;
+  background-color: #fff3e0;
+  border-left: 3px solid #f5b971;
+  border-radius: 5px;
+}
+
+/* Diagram styling */
+.layer-diagram {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
